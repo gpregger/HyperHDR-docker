@@ -15,6 +15,6 @@ RUN rm HyperHDR-*-Linux-x86_64.deb
 
 EXPOSE 8090 19444 19445
 
-RUN echo 'Running webUIon port 8090. Port 19444-19445 exposed for json, protobuffer server (hyperion-screen-cap).'
+RUN echo 'Running webUIon port 8090. Port 19444-19445 exposed for json, protobuffer server (hyperion-screen-cap)'
 
 CMD ["hyperhdr"]
