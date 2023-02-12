@@ -3,7 +3,7 @@ name: docker-build-beta
 on:
   push:
     branches:
-      - 'master'
+      - 'master/Dockerfile.beta'
 
 jobs:
   build:
