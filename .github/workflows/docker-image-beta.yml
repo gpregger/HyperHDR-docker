@@ -3,7 +3,7 @@ name: docker-build-beta
 on:
   push:
     paths:
-      - '**/Dockerfile.beta'
+      - '**Dockerfile.beta'
 
 jobs:
   build:
