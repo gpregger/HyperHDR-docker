@@ -18,3 +18,5 @@ EXPOSE 8090 19444 19445
 RUN echo 'Running webUI on port 8090. Port 19444-19445 exposed for json, protobuffer server (hyperion-screen-cap). '
 
 CMD ["hyperhdr"]
+
+
