@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile.beta
           push: true
-          tags: gpregger/hyper-hdr-docker:beta,gpregger/hyperhdr:beta
+          tags: gpregger/hyper-hdr-docker:beta,gpregger/hyperhdr:beta,gpregger/hyper-hdr-docker:latest,gpregger/hyperhdr:latest
