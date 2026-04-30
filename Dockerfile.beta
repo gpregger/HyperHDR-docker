@@ -8,10 +8,11 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-ins
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/awawa-dev/HyperHDR/releases/download/v22.0.0.0beta1/HyperHDR-22.0.0beta1-Linux-x86_64.deb
-RUN apt-get install -y ./HyperHDR-*-Linux-x86_64.deb
+# RUN wget https://github.com/awawa-dev/HyperHDR/releases/download/v22.0.0.0beta1/HyperHDR-22.0.0beta1-Linux-x86_64.deb
+wget https://awawa-dev.github.io/pool/main/h/hyperhdr/hyperhdr_22.0.0~noble~beta1_amd64.deb
+RUN apt-get install -y ./hyperhdr_*_amd64.deb
 
-RUN rm HyperHDR-*-Linux-x86_64.deb
+RUN rm hyperhdr_*_amd64.deb
 
 EXPOSE 8090 19444 19445
 
